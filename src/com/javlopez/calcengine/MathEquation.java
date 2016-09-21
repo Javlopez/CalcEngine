@@ -4,10 +4,40 @@ package com.javlopez.calcengine;
  * Created by jlopez on 9/20/16.
  */
 public class MathEquation {
-    public double leftVal;
-    public double rightVal;
-    public char opCode;
-    public double result;
+    private double leftVal;
+    private double rightVal;
+    private char opCode;
+    private double result;
+
+
+    public void setLeftValue(double leftVal) {
+        this.leftVal = leftVal;
+    }
+
+    public double getLeftVal(){
+        return leftVal;
+    }
+
+    public void setRightVal(double rightVal) {
+        this.rightVal = rightVal;
+    }
+
+    public double getRightVal() {
+        return rightVal;
+    }
+
+    public void setOpCode(char opCode) {
+        this.opCode = opCode;
+    }
+
+    public char getOpCode(){
+        return opCode;
+    }
+
+    public double getResult() {
+        return result;
+    }
+
 
     public void execute(){
 
