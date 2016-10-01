@@ -18,15 +18,28 @@ public class Main {
             System.out.print("result = ");
             System.out.println(equation.getResult());
         }
+
+        System.out.println("===========================");
+        System.out.println("Using overloads");
+        System.out.println("===========================");
+
+        double leftDoubleValue = 9.0d;
+        double rightDoubleValue = 4.0d;
+
+        int leftInt = 9;
+        int rightInt = 4;
+
+        MathEquation mathEquationOverload = new MathEquation('d');
+        mathEquationOverload.execute(leftDoubleValue, rightDoubleValue);
+        System.out.print("result double = ");
+        System.out.println(mathEquationOverload.getResult());
+
+        mathEquationOverload.execute(leftInt, rightInt);
+        System.out.print("result int = ");
+        System.out.println(mathEquationOverload.getResult());
+
+        mathEquationOverload.execute((double) leftInt, rightInt);
+        System.out.print("result int = ");
+        System.out.println(mathEquationOverload.getResult());
     }
-
-/*    public static MathEquation create(double leftVal, double rightVal, char opCode) {
-        MathEquation equation = new MathEquation();
-
-        equation.setLeftValue(leftVal);
-        equation.setRightVal(rightVal);
-        equation.setOpCode(opCode);
-
-        return equation;
-    }*/
 }
