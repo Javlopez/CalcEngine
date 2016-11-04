@@ -3,7 +3,7 @@ package com.javlopez.calcengine;
 public class Main {
 
     public static void main(String[] args) {
-        
+
         String[] statements = {
                 "add 1.0",
                 "add xx 25.0",
