@@ -32,7 +32,7 @@ public abstract class CalculateBase {
         this.result = result;
     }
 
-    //public CalculateBase() {}
+    public CalculateBase() {}
 
     public CalculateBase(double leftVal, double rightVal) {
         this.leftVal = leftVal;
